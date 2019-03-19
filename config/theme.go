@@ -24,7 +24,8 @@ type Message struct {
 }
 
 type Channel struct {
-	Prefix string `json:"prefix"`
-	Icon   string `json:"icon"`
-	Text   string `json:"text"`
+	Prefix  string `json:"prefix"`
+	Icon    string `json:"icon"`
+	Text    string `json:"text"`
+	Default string `json:"default"`
 }

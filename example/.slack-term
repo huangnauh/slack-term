@@ -1,0 +1,13 @@
+{
+    "slack_token": "",
+    "sidebar_width": 3,
+    "emoji": true,
+    "theme": {
+        "message" : {
+            "time": "fg-red,fg-bold"
+        },
+        "channel": {
+            "default": "grafana"
+        }
+    }
+}

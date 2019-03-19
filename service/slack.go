@@ -245,6 +245,14 @@ func (s *SlackService) GetChannels() ([]components.ChannelItem, error) {
 		}
 
 		sort.Slice(tcArr, func(i, j int) bool {
+			if s.Config.Theme.Channel.Default == tcArr[i].channelItem.Name {
+				return true
+			}
+
+			if s.Config.Theme.Channel.Default == tcArr[j].channelItem.Name {
+				return false
+			}
+
 			return tcArr[i].channelItem.Name < tcArr[j].channelItem.Name
 		})
 
